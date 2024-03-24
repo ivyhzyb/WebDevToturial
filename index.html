@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tutorial 2</title>
+  </head>
+  <body>
+    <h1>Group project sign-up</h1>
+    <div class="signUpForm">
+      <h2>Sign-up</h2>
+      <p>Enter the student number of your group members</p>
+      <p>It is not required to have 4 people</p>
+
+      <p>Enter your sign-up detail here</p>
+
+      <form action="/submitGroup">
+        <label for="numberOfStudents">Number of students</label>
+        <!-- <input type="number" id="numberOfStudents" min="1" max="4" /> -->
+        <select name="numberOfStudents" id="numberOfStudents">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <br />
+
+        <label for="student1">Student 1: </label>
+        <input type="number" id="student1" />
+        <br />
+
+        <label for="student2">Student 2: </label>
+        <input type="number" id="student2" />
+        <br />
+
+        <label for="student3">Student 3: </label>
+        <input type="number" id="student3" />
+        <br />
+
+        <label for="student4">Student 4: </label>
+        <input type="number" id="student4" />
+        <br />
+
+        <input type="submit" />
+      </form>
+    </div>
+
+    <div id="existingGroups">
+      <h2>Existing groups</h2>
+      <table border="1">
+        <tr>
+          <th>Group ID</th>
+          <th>Student1</th>
+          <th>Student2</th>
+          <th>Student3</th>
+          <th>Student4</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td><span class="sname">Rob</span> (00000000)</td>
+          <td><span class="sname">Lee</span> (00000000)</td>
+          <td><span class="sname">Julie</span> (00000000)</td>
+          <td><span class="sname">Julia</span> (00000000)</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><span class="sname">Rob</span> (00000000)</td>
+          <td><span class="sname">Rob</span> (00000000)</td>
+          <td><span class="sname">Rob</span> (00000000)</td>
+          <td><span class="sname">Rob</span> (00000000)</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

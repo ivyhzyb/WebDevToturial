@@ -1,0 +1,23 @@
+* {
+  font-family: sans-serif;
+}
+
+.signUpForm {
+  background-color: #f8f0fc;
+}
+
+#existingGroups {
+  background-color: #f8f0fc;
+}
+
+h1 {
+  background-color: #f3d9fa;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.sname:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
